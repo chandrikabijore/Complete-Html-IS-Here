@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul style="list-style: none; display: flex; gap: 15px">
+        <li>Home</li>
+        <li>About</li>
+        <li>Services</li>
+        <li>Contact</li>
+    </ul>    
+</body>
+</html>
+<!-- *---------------------------------------- -->
+<!-- * HTML LIST - ORDER VS UNORDERED TAG  
+<!-- *---------------------------------------- -->
+
+<!--   
+?Unordered List (<ul>) Example:  An unordered list is used to create a list of items that are not in any particular order. Each list item is marked with a bullet point.
+
+  
+Unordered List (<ul>) Styles:
+
+  Disc (list-style-type: disc;): Default style - filled circles.
+  Circle (list-style-type: circle;): Hollow circles.
+  Square (list-style-type: square;): Squares.
+  None (list-style-type: none;): No bullet points.
+
+       
+Ordered List (<ol>) Example:
+   An ordered list is used to create a list of items in a specific order, typically indicated by numbers.
+
+
+Ordered List (<ol>) Styles: 
+
+  Decimal (list-style-type: decimal;): Default style - decimal numbers.
+  Lowercase Letters (list-style-type: lower-alpha;): Lowercase letters (a, b, c).
+  Uppercase Letters (list-style-type: upper-alpha;): Uppercase letters (A, B, C).
+  Lowercase Roman Numerals (list-style-type: lower-roman;): Lowercase Roman numerals (i, ii, iii).
+  Uppercase Roman Numerals (list-style-type: upper-roman;): Uppercase Roman numerals (I, II, III) 
+
+-->
+
+<!-- *---------------------------------------- -->
+<!-- *INTERVIEW Q:  HTML LIST 
+<!-- *---------------------------------------- -->
+
+<!--? 1: What is the significance of the type attribute in ordered lists?  
+type: The type attribute in an ordered list (<ol>) specifies the kind of marker that will be used for the list items. This attribute allows you to change the numbering style from the default Arabic numerals (1, 2, 3, etc.) to other styles such as uppercase or lowercase letters, and Roman numerals. -->
+
+<!--Decimal Numbers (type="1"):   This is the default style. It uses regular decimal numbers. 
+    Uppercase Letters (type="A"): It uses uppercase letters (A, B, C) as list item numbers.
+    Lowercase Letters (type="a"): It uses lowercase letters (a, b, c) as list item numbers.
+    Uppercase Roman Numerals (type="I"): It uses uppercase Roman numerals (I, II, III) as list item numbers.
+    Lowercase Roman Numerals (type="i"): It uses lowercase Roman numerals (i, ii, iii) as list item numbers. -->   
+
+<!--? 2: What is the use of the start attribute in ordered lists? 
+The start attribute in an ordered list (<ol>) specifies the starting value for the list items. By default, an ordered list starts with the value 1, but using the start attribute, you can begin the numbering from any other integer value.
+
+EXAMPLE: 
+<ol start="5">
+    <li>First item</li>
+    <li>Second item</li>
+    <li>Third item</li>
+</ol>
+-->
+
+<!--? 3: Explain the concept of nested lists?
+A nested list in HTML refers to a list within another list, allowing you to create hierarchical or multi-level lists. This structure is useful for representing complex data, such as categories and subcategories, outlines, or multi-tiered content.  -->
+
+<!--? 4: How do you create a horizontal navigation menu using an unordered list? -->
+
+ 
+<ol style="list-style-type: none">
+    <li>Apple</li>
+    <li>Banana</li>
+    <li>Papaya</li>
+    <li>Grapes</li>
+    <li>Mango</li>
+</ol>
+<hr>
+
+<ul>
+     <li>Fruits
+        <ol>
+            <li>Banana</li>
+            <li>Apple
+                <ul>
+                    <li>Red</li>
+                    <li>Green</li>
+                </ul>
+            </li>
+            <li>Pears</li>
+        </ol>
+     </li>
+     <li>Vegetables</li>
+     <li>Meat</li>
+</ul>
+<dl>
+    <dt>HTML</dt>
+    <dd>Hypertext Markup Language</dd>
+    <dt>CSS</dt>
+    <dd>Cascading Style Sheets</dd>
+</dl> 
+<ol reversed>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+</ol>
+
+<!--?5 How do you remove the bullets from an unordered list?
+You can remove bullets by using CSS: 
+ul{
+    list-style-type: none;
+}   -->
+
+<!--? How can you make a list responsive across different screen sizes?
+Answer: Use media queries to adjust the layout:
+@media (max-width: 600px) {
+    ul {
+        display: block;
+    }
+    li {
+        display: block;
+        width: 100%;
+    }
+} -->
+
+<!--? display: block; makes an element a block-level element, meaning:
+1) It takes up the full width of its parent container.
+2) It starts on a new line, pushing other elements down.
+3) You can set its width, height, margin, and padding.
+4) Commonly used for elements like <div>, <p>, and headings.
+5) It’s useful for structuring content and creating layouts where elements need to stack vertically.-->
+
+<!--? 6: How do you create a definition list in HTML? -->
+
+<!--*Types of Lists in HTML :
+1) Unordered List (<ul>)
+2) Ordered List (<ol>)
+3) Description List (<dl>): Displays a list of terms with corresponding descriptions.
+Example of dl:
+<dl>
+    <dt>HTML</dt>
+    <dd>Hypertext Markup Language</dd>
+    <dt>CSS</dt>
+    <dd>Cascading Style Sheets</dd>
+</dl> -->
+
+<!--?Attributes for Lists
+1) Type Attribute (for <ol>): Specifies the kind of marker to use in an ordered list.
+Values: 1 (default, numbers), A (uppercase letters), a (lowercase letters), I (uppercase Roman numerals), i (lowercase Roman numerals).
+ 
+2) Start Attribute (for <ol>): Specifies the starting number of the first item in the list.
+
+3) Reversed Attribute (for <ol>): Reverses the numbering order in an ordered list.
+Example of reversed:
+<ol reversed>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+</ol> -->

@@ -1,0 +1,52 @@
+<!-- *------------------------------------- -->
+<!--* 2: HTML PARAGRAPH ELEMENTS  
+<!-- *---------------------------------------- -->
+<!-- 
+? The <p> tag defines a paragraph.
+? Browsers automatically add a single blank line before and after each <p> element. -->
+
+<!-- *---------------------------------------- -->
+<!-- * INTERVIEW : HTML PARAGRAPH ELEMENT
+<!-- *---------------------------------------- -->
+<!--? 1:How do you create a paragraph using the <p> tag? -->
+<!--? 2:Can you nest other HTML elements inside a <p> tag? -->
+<!-- ANS => No, the <p> tag is a block-level element, and it cannot contain block-level-elements like other paragraph or headings however uou can include inline elements like <strong>, <em> and links. -->
+<!-- TODO Now, we will see BR and HR Tag --> 
+
+
+<!--? 3:How do you add space between paragraphs?
+Answer: You can add space between paragraphs using CSS with the margin property. For example:
+p {
+    margin-bottom: 20px;
+} -->
+
+<!--? 4:What are the implications of using multiple <p> tags for spacing content?
+Answer: Using multiple <p> tags for spacing instead of CSS is not recommended. It results in poor semantic HTML and can cause layout issues across different devices and screen sizes. It's better to control spacing with CSS.
+    
+To control spacing in CSS:
+margin: Controls the space outside an element (around it).
+Example: margin: 20px; adds 20px space outside the element.
+padding: Controls the space inside an element (between content and border).
+Example: padding: 20px; adds 20px space inside the element.
+line-height: Controls the space between lines of text.
+Example: line-height: 1.5; increases readability by spacing lines.
+white-space: Controls how whitespace is handled (wrapping, collapsing).
+Example: white-space: nowrap; prevents text from wrapping.-->
+
+<!--? 5:Explain the difference between inline and block-level elements in the context of paragraphs.
+Answer: The <p> tag is a block-level element, meaning it takes up the full width of its container and starts on a new line. Inline elements, like <span>, do not start on a new line and only take up as much width as their content requires. -->
+
+<!--? 6:What happens if you don't close a <p> tag in HTML?
+Answer: If you don't close a <p> tag, the browser will usually close it automatically when another block-level element is encountered. However, this can lead to unexpected results and is not good practice.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paragraph Tag</title>
+</head>
+<body>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque accusantium earum laudantium amet voluptas. Harum quam exercitationem quidem id asperiores <h1>Chandrika Bijore </h1>reiciendis consequatur, eligendi placeat, doloribus, fugiat facere laboriosam tempora tenetur.</p>
+</body>
+</html>

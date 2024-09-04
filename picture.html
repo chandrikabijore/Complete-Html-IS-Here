@@ -1,0 +1,92 @@
+<!-- *------------------------------------- -->
+<!--*  HTML PICTURE TAG  
+<!-- *---------------------------------------- -->
+
+<!--? The <picture> element in HTML is used to provide multiple sources of an image, allowing the browser to choose the most appropriate source based on the user's device, screen size, and other factors. This is particularly useful for responsive  design and ensuring the best quality images are displayed. </picture> -->
+
+<!-- SHARING IS CARING 💖  https://pixelied.com/, https://squoosh.app/ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Urbanist:wght@300;400;600;700;800;900&display=swap");
+      html {
+        font-family: "jost", sans-serif;
+        font-weight: bold;
+        text-align: center;
+        background-color: #efefef;
+        /* color: #fff; */
+      }
+      img {
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border-radius: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>HTML PICTURE TAG</h1>
+    <picture>
+      <source srcset="./images/html.webp" type="image/webp" />
+      <source srcset="./images/html.jpg" type="image/jpg" />
+      <source srcset="./images/html.jpeg" type="image/jpeg" />
+      <source srcset="./images/html.svg" type="image/svg" />
+      <img
+        src="images/html.png"
+        alt="best html course by thapa techncial"
+        width="500"
+      />
+    </picture>
+  </body>
+</html>
+
+<!-- ========== Start Interview Questions ========== -->
+ 
+1). What is the purpose of the <picture> tag in HTML?
+Ans:The <picture> tag is used to provide multiple image sources for different devices or screen conditions, allowing for responsive images. It enables developers to specify different images based on factors like screen width, device pixel ratio, or other media queries.
+
+
+2). How does the <picture> tag differ from using the srcset attribute on an <img> tag?
+Ans:The <picture> tag allows for more complex responsive image handling, enabling different images to be served based on media queries (e.g., screen size or orientation). The srcset attribute on an <img> tag is primarily used for serving different resolutions or sizes of the same image based on the device's screen width.
+
+
+3). Can you provide an example of how to use the <picture> tag?
+Ans: 
+<picture>
+    <source srcset="image-wide.jpg" media="(min-width: 800px)">
+    <source srcset="image-narrow.jpg" media="(max-width: 799px)">
+    <img src="image-default.jpg" alt="Responsive Image">
+</picture>
+In this example, image-wide.jpg is shown on screens 800px or wider, image-narrow.jpg on screens narrower than 800px, and image-default.jpg is the fallback image.
+  
+
+4). What is the role of the <source> element within the <picture> tag?
+Ans:The <source> element within the <picture> tag defines alternative image sources and conditions (using media queries) under which each source should be used. The browser selects the most appropriate source based on these conditions.
+  
+
+5). What happens if none of the media queries in the <source> elements match the user's device?
+Ans: If none of the media queries match, the browser will use the image specified in the <img> tag within the <picture> element as a fallback.
+  
+
+6). Is the <picture> tag necessary for all responsive images? When should you use it?
+Ans: The <picture> tag is not necessary for all responsive images. It should be used when you need to switch between entirely different images based on conditions like screen size or orientation. For simpler cases, such as serving different image resolutions, the srcset attribute on an <img> tag may suffice.
+  
+
+7). How does the browser determine which image to display when using the <picture> tag?
+Ans:The browser evaluates the media queries in the <source> elements from top to bottom. It stops at the first source that matches the conditions and displays the corresponding image. If no sources match, it falls back to the <img> tag.
+
+
+8). Can the <picture> tag be used for art direction? What does this mean?
+Ans:Yes, the <picture> tag can be used for art direction, meaning you can serve entirely different images depending on the viewing context (e.g., a close-up image on mobile devices and a wide-angle shot on desktops). This is particularly useful for ensuring the best visual experience across different devices.
+  
+
+9). What are the accessibility considerations when using the <picture> tag?
+Ans: Ensure that the <img> tag within the <picture> element always includes an alt attribute. This provides a description of the image for screen readers and improves accessibility for users who cannot see the image.
+
+
+10). How does the <picture> element contribute to performance optimization?
+Ans: The <picture> element helps optimize performance by allowing the browser to load the most appropriate image for the user's device, potentially reducing the file size and improving load times, especially on mobile devices with limited bandwidth.
+
+<!-- ========== End Interview Questions ========== -->
